@@ -1,0 +1,9 @@
+{
+    "name": "TetrisFun",
+    "package_path" : "http://localhost/TetrisFun/TetrisFun.zip",
+    "version": "1.0",
+    "developer": {
+        "name": "Giovanny Andres Gongora Granada",
+        "url": "http://github.com/Gioyik"
+    }
+}

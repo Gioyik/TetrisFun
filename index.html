@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Simple Tetris</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="lib/jquery.mobile/jquery.mobile-1.2.0.min.css" /> 
+        <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+		<script type="text/javascript" src="lib/jquery.min.js"></script>
+        <script type="text/javascript" src="lib/jquery.mobile/jquery.mobile-1.2.0.min.js"></script>
+	</head>
+
+	<div data-role="page">
+	
+	    <div data-role="header" data-theme="e">
+	        <h1>TetrisFun</h1>
+	    </div><!-- /header -->
+	
+	    <div data-role="content">
+	
+					<div id="start-menu" class="menu">
+							<!-- <img id="logo" src="img/logo.png"/> -->
+							<input id="start1" value="Start" type="button" data-inline="true"/><br />
+					</div>
+	
+				<div id="singlePage" class="ui-grid-a" style="display : none;">
+					
+					<div class="ui-block-a">
+						<canvas id="grid" width='180' height='300' style="display:inline;"></canvas>
+						<div id="bottom-input">
+							<!-- <input id="return" value="Home" type="button" data-inline="true" data-theme="a"/> -->
+							<!-- <input id="pause" value="Pause" type="button" data-inline="true" data-theme="a"/> -->
+							<!-- <input id="left"  data-icon="arrow-l" value="←" type="button" data-inline="true" data-theme="a"/> -->
+							<!-- <input id="right" data-icon="arrow-r" value="→" type="button" data-inline="true" data-theme="a"/> -->
+						</div>			
+					</div>
+
+					<div class="ui-block-b">
+						<ul id="right-input">
+						<!-- <li><input id="pause" value="Pause" type="button" data-inline="true" data-theme="a"/></li> -->
+						<!-- <li><input id="return" value="Home" type="button" data-inline="true" data-theme="a"/></li> -->
+						<li><input id="left"  data-icon="arrow-l" value="←" type="button" data-inline="true" data-theme="b"/></li>
+                        <li><input id="right" data-icon="arrow-r" value="→" type="button" data-inline="true" data-theme="b"/></li>																
+						<li><input id="down" data-icon="arrow-d" value="↓" type="button" data-inline="true" data-theme="d"/></li>
+						<li><input id="up"  data-icon="arrow-u" value="↵" type="button" data-inline="true" data-theme="e"/></li>
+						<li><input id="return" value="Home" type="button" data-inline="true" data-theme="a"/></li>
+						<!-- <li><input id="return" value="Home" type="button" data-inline="true" data-theme="a"/></li> -->
+						</ul>
+					</div>
+
+				</div>
+	    </div><!-- /content -->
+	
+	    <div data-role="footer" data-position="fixed">
+	        <h4>Play it, Just for fun :)</h4>
+	    </div><!-- /footer -->
+	</div><!-- /page -->
+	
+			<script type="text/javascript" src="phonegap.js"></script>
+			<script type="text/javascript" src="lib/underscore-min.js?v=1218"></script>
+			<script type="text/javascript" src="lib/backbone-min.js?v=1218"></script>
+			
+			<script type="text/javascript" src="js/utils.js?v=1227"></script>
+	
+			<script type="text/javascript" src="js/model/tetris.js?v=0127"></script>
+			<script type="text/javascript" src="js/model/mediator.js?v=0127"></script>				
+			<script type="text/javascript" src="js/view/grid.js?v=0127"></script>		
+			<script type="text/javascript" src="js/view/app.js?v=0127"></script>
+			<script type="text/javascript" src="js/main.js?v=0127"></script>
+</html>
